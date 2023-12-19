@@ -1,0 +1,29 @@
+.success-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .welcome-text {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .payment-info,
+  .batch-timing,
+  .personal-info {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    margin: 8px 0;
+  }
+  
