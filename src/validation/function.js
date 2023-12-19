@@ -1,8 +1,3 @@
-function validateEmail(email) {
-  const mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-  return email !== undefined && email.match(mailformat) !== null;
-}
-
 function validateName(name) {
   if (name === undefined) return false;
   if (name.length > 150) return false;
@@ -24,7 +19,6 @@ function validateAge(dateOfBirth) {
 }
 
 function validateCardLength(cardNo) {
-  // Assuming you want to validate the length of the card number
   return cardNo.length === 16;
 }
 
@@ -38,7 +32,6 @@ function validateUpi(upiId) {
 
 export {
   validateAge,
-  validateEmail,
   validateName,
   validatePhone,
   validateCardLength,

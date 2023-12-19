@@ -44,7 +44,6 @@ const AdmissionForm = () => {
         // console.log(response.data);
       } catch (error) {
         console.error("Error submitting form:", error);
-        // Handle errors, show messages, etc.
       }
     }
   };

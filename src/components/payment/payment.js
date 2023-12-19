@@ -22,7 +22,6 @@ const Payment = () => {
       participant: participantId,
     };
 
-    // Extract payment method-specific fields
     let paymentData = {};
     if (selectedPaymentMethod === "card") {
       paymentData = {
@@ -39,25 +38,21 @@ const Payment = () => {
         paylaterDate: formData.get("paylaterDate"),
       };
     }
-    // Combine common and payment method-specific data
     const requestData = {
       ...commonFields,
       paymentMethod: selectedPaymentMethod,
       paymentData,
     };
-    console.log(paymentData);
 
     try {
+      // eslint-disable-next-line
       const response = await axios.post(
         `${process.env.REACT_APP_API}/payment`,
         requestData
       );
-      console.log(response.data);
       navigate(`/success/${participantId}`);
-      // Add any additional logic based on the response if needed
     } catch (error) {
-      console.error("Error processing payment:", error);
-      // Handle errors, show messages, etc.
+      // console.error("Error processing payment:", error);
     }
   };
   return (
@@ -83,7 +78,6 @@ const Payment = () => {
             </select>
           </label>
 
-          {/* Additional fields for card payment */}
           {paymentMethod === "card" && (
             <>
               <label>
