@@ -51,4 +51,7 @@ Admission Form: Collects personal information, including name, date of birth, se
 Payment Form: Allows participants to choose payment methods (card, UPI, pay later) and submit payment details.
 Success Page: Displays payment success information along with the participant's batch and personal details.
 
-![ER-Model](https://ibb.co/mc5Y7Z0)
+ER-Model
+
+<img width="689" alt="" src="https://github.com/Paras-27/Flex-money-front/assets/105578635/ba57671e-88e1-4262-9612-c9c16d64bd28">
+
