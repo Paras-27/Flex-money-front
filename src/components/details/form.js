@@ -19,7 +19,7 @@ const AdmissionForm = () => {
     const age = validateAge(dob);
 
     //Age Validation
-    if (age < -18) {
+    if (age < 18) {
       alert("Your age is below 18 years");
     } else if (age > 65) {
       alert("Your age is above 65 years");
